@@ -698,8 +698,9 @@
             </div>
         </div>
     </section>
-<div id="loader">
-    <p>Yükleniyor...</p>
+<div id="loader" >
+    <img style="border-radius: 50%;" width="50px" src="img/logo.jpg" alt="">
+    <div class="loader"></div>
 </div>
 <div class="wp-ab2">
     <a href="https://api.whatsapp.com/send/?phone=905528380101&amp;text&amp;type=phone_number&amp;app_absent=0"
@@ -729,12 +730,12 @@
         document.addEventListener("DOMContentLoaded", function () {
                 const images = document.querySelectorAll(".image-to-load");
                 let imagesLoaded = 0;
-
+                document.body.style.overflow = "hidden";
                 function checkImagesLoaded() {
                     imagesLoaded++;
                     if (imagesLoaded === images.length) {
                         document.getElementById("loader").style.display = "none";
-                        document.body.style.overflow = "auto";
+                        document.body.style.overflow = "auto"; // Resimler yüklendiğinde scroll'u geri getir
                         document.getElementById("content").style.display = "block";
                     }
                 }
@@ -744,7 +745,7 @@
                         checkImagesLoaded();
                     } else {
                         image.addEventListener("load", checkImagesLoaded);
-                        image.addEventListener("error", checkImagesLoaded); // hata durumunda da yükleyici kalksın
+                        image.addEventListener("error", checkImagesLoaded); // Hata durumunda da yükleyici kalksın
                     }
                 });
             });
