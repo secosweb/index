@@ -45,6 +45,19 @@ nav{
     box-shadow: 0 0 15px #00000020;
     animation: idle 1.3s ease infinite;
 }
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    z-index: 9999;
+}
 .wp-ab2 a{
     display: flex !important;
     align-items: center !important;
