@@ -1,0 +1,91 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button:focus{
+    border: none;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 999;   
+}
+.contact-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.wp-ab a{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    height: 65px;
+    width: 65px;
+    font-size: 44px;
+    z-index: 999;
+    background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 0 15px #00000020;
+    animation: idle 1.3s ease infinite;
+}
+.wp-ab2 a{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: fixed;
+    bottom: 90px;
+    right: 10px;
+    height: 65px;
+    width: 65px;
+    font-size: 44px;
+    z-index: 999;
+    background-color: #24CC63;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 0 15px #00000020;
+    animation: idle2 1.3s ease infinite;
+}
+
+@keyframes idle {
+    0% {
+            bottom: 30px;
+        }
+    
+        50% {
+            bottom: 25px;
+        }
+    
+        100% {
+            bottom: 30px;
+        }
+}
+@keyframes idle2 {
+    0% {
+            bottom: 90px;
+        }
+    
+        50% {
+            bottom: 85px;
+        }
+    
+        100% {
+            bottom: 90px;
+        }
+}
