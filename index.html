@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
     <script src="https://kit.fontawesome.com/e2bce648c2.js" crossorigin="hurphygames"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Secos | Güzellik Merkezi</title>
 </head>
 <body>
     <div class="contact-div">
@@ -698,10 +715,7 @@
             </div>
         </div>
     </section>
-<div id="loader" >
-    <img style="border-radius: 50%;" width="50px" src="img/logo.jpg" alt="">
-    <div class="loader"></div>
-</div>
+
 <div class="wp-ab2">
     <a href="https://api.whatsapp.com/send/?phone=905528380101&amp;text&amp;type=phone_number&amp;app_absent=0"
         target="_blank"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
@@ -726,30 +740,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-                const images = document.querySelectorAll(".image-to-load");
-                let imagesLoaded = 0;
-                document.body.style.overflow = "hidden";
-                function checkImagesLoaded() {
-                    imagesLoaded++;
-                    if (imagesLoaded === images.length) {
-                        document.getElementById("loader").style.display = "none";
-                        document.body.style.overflow = "auto"; // Resimler yüklendiğinde scroll'u geri getir
-                        document.getElementById("content").style.display = "block";
-                    }
-                }
-
-                images.forEach(image => {
-                    if (image.complete) {
-                        checkImagesLoaded();
-                    } else {
-                        image.addEventListener("load", checkImagesLoaded);
-                        image.addEventListener("error", checkImagesLoaded); // Hata durumunda da yükleyici kalksın
-                    }
-                });
-            });
-    </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     
 </body>
