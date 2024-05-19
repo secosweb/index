@@ -92,3 +92,169 @@ nav{
             bottom: 90px;
         }
 }
+
+
+.faq-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px ;
+    color: #000;
+    margin-bottom: 1px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #00000041;
+    font-weight: 600;
+    cursor: pointer;
+ 
+}
+
+.faq-header:after {
+    position: absolute;
+    right: 10px;
+    content: '\2b';
+    color: #000;
+    font-size: 48px;
+
+}
+
+.faq-active .faq-header:after {
+
+    rotate: 45deg;
+}
+
+.accordion-item {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.paragraph {
+    max-height: 0px;
+    height: 0%;
+    overflow: hidden;
+    background: #f5f5f5;
+    border-radius: 5px;
+    transition: 1s all;
+    color: #000;
+    font-size: 24px;
+
+}
+
+.accordion-item .paragraph {
+    transition: 0.3s all;
+}
+
+.faq-active .paragraph {
+    height: 100%;
+    max-height: 500px;
+}
+
+.accordion-menu {
+    max-width: 800px;
+    margin: auto;
+
+}
+
+.paragraph-content {
+    padding: 22px;
+    
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 948px) {
+
+
+ 
+
+    .content-text,
+    .questions-header {
+        font-size: 42px;
+    }
+
+    .faq-header {
+        font-size: 20px;
+    }
+
+    .faq-header:after {
+        font-size: 32px;
+    }
+
+    .accordion-menu {
+        width: 80%;
+        margin: auto;
+    }
+
+    .paragraph {
+        font-size: 20px;
+    }
+
+ 
+}
+
+@media only screen and (max-width: 668px) {
+
+    .content-text,
+    .questions-header {
+        font-size: 38px;
+    }
+
+    .faq-header {
+        font-size: 18px;
+    }
+
+    .faq-header:after {
+        font-size: 32px;
+    }
+
+    .accordion-menu {
+        width: 97%;
+        margin: auto;
+    }
+
+    .paragraph {
+        font-size: 18px;
+    }
+
+
+ 
+}
+
+
+
+@media only screen and (max-width: 430px) {
+ }
+
+   
+
+    
+    .content-text,
+    .questions-header {
+        font-size: 24px;
+    }
+
+    .faq-header {
+        font-size: 14px;
+    }
+
+    .faq-header:after {
+        font-size: 26px;
+    }
+
+    .accordion-menu {
+        width: 97%;
+        margin: auto;
+    }
+
+    .paragraph {
+        font-size: 14px;
+    }
+
+  
+    
