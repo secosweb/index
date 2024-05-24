@@ -162,7 +162,12 @@ nav{
     
 }
 
-
+.goog-te-gadget-simple{
+    display: flex !important;
+}
+.goog-te-gadget-simple a{
+    display: flex !important;
+}
 
 
 
